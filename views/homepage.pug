@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Custom Object Records
+    a(href="/update-cobj") Add to this table
+    table(border="1")
+      thead
+        tr
+          th Name
+          th Power
+          th Origin
+      tbody
+        each obj in objects
+          tr
+            td= obj.properties.name
+            td= obj.properties.power
+            td= obj.properties.origin

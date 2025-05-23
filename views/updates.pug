@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Add a Custom Object
+    a(href="/") Return to the homepage
+    form(action="/update-cobj", method="POST")
+      div
+        label(for="name") Name:
+        input(type="text", name="name", required)
+      div
+        label(for="power") Power:
+        input(type="text", name="power", required)
+      div
+        label(for="origin") Origin:
+        input(type="text", name="origin", required)
+      button(type="submit") Submit
